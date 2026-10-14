@@ -1,0 +1,33 @@
+# ──────────────────────────────────────────────────────────────────────
+#  WeighScale — files that should NOT be committed to GitHub
+# ──────────────────────────────────────────────────────────────────────
+
+# Python virtual environments (local only — recreate with pip install -r requirements.txt)
+.venv/
+venv/
+env/
+ENV/
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Runtime logs produced by the services (mock + real)
+*.log
+
+# Test / coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
