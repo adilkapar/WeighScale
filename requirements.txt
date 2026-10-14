@@ -1,0 +1,19 @@
+# requirements.txt — Python dependencies for WeighScale integration
+#
+# Install with:   pip install -r requirements.txt
+#
+# Notes:
+#   - pyserial     : Serial port communication (scale_service.py, mock_weighbridge.py)
+#   - flask         : Lightweight REST API framework
+#   - waitress      : Production-grade WSGI server (replaces Flask dev server)
+#   - pywin32       : Windows service support (scale_win_service.py) — Windows only
+#
+# On Linux/macOS (dev only), skip pywin32:
+#   pip install pyserial flask waitress
+
+pyserial>=3.5
+flask>=2.3
+waitress>=2.1
+
+# Uncomment the line below on Windows to enable the Windows service wrapper:
+# pywin32>=306
